@@ -190,8 +190,27 @@ cv2.destroyAllWindows()
 
 
 ### vii) HSV to RGB and BGR
-<br>
-<br>
+```Python
+import cv2
+img = cv2.imread('space1.jpg')
+img = cv2.resize(img,(300,200))
+img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
+cv2.imshow('Original HSV Image',img)
+RGB = cv2.cvtColor(img,cv2.COLOR_HSV2RGB)
+cv2.imshow('2HSV2BGR',RGB)
+BGR = cv2.cvtColor(img,cv2.COLOR_HSV2BGR)
+cv2.imshow('HSV2RGB',BGR)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+
+### OUTPUT:
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/961fdb4e-89ba-4906-bbc7-e4a17791e03b)
+
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/c7bdf89c-bbdf-405b-b67f-c486e80b7efc)
+
+![Uploading image.png…]()
+
 
 ### viii) RGB and BGR to YCrCb
 <br>
