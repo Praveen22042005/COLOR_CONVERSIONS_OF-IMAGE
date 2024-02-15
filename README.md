@@ -86,9 +86,21 @@ Split and merge HSV Image
     <td width=50%>
 
 ### iii)Shape of the Image
+```Python
+    import cv2
+    image=cv2.imread('green.jpg',1)
+    print(image.shape)
+```
+  </td>
+  <td>
 
-<br>
-<br>
+### OUTPUT:
+![Uploading out 1.png…]()
+
+  </td>
+  </tr>
+  <tr>
+    <td>
 
 ### iv)Access rows and columns
 <br>
