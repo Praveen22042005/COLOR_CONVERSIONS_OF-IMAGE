@@ -174,7 +174,9 @@ cv2.imshow('RGB2GRAY',gray2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-
+</td>
+  <td>
+    
 ### OUTPUT:
 ![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/b932447d-5145-40a4-a9b1-867fc1e13b91)
 ![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/472665a3-0ac6-4ca9-9063-d75f68857bc7)
@@ -182,6 +184,9 @@ cv2.destroyAllWindows()
 ![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/4fcf7e77-6753-4bda-9b59-678940bc4b5d)
 ![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/90be3e77-b45f-4138-b9c2-a27e45a211f9)
 
+</td>
+  </tr>
+</table>
 
 
 ### vii) HSV to RGB and BGR
