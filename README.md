@@ -104,18 +104,18 @@ Split and merge HSV Image
 
 ### iv)Access rows and columns
 ```Python
-    !pip install google-colab
-  from google.colab.patches import cv2_imshow
-  import cv2
-  import numpy as np
-  image=cv2.imread('green.jpg',1)
-  image = cv2.resize(image, (400, 400))
-  print(image.shape)
-  tag =image[130:200,110:190]
-  image[110:180,120:200] = tag
-  cv2_imshow(image)
-  cv2.waitKey(0)
-  cv2.destroyAllWindows()
+   !pip install google-colab
+from google.colab.patches import cv2_imshow
+import random
+import cv2
+image=cv2.imread('green.jpg',1)
+image=cv2.resize(image,(400,400))
+for i in range (150,200):
+  for j in range(image.shape[1]):
+    image[i][j]=[random.randint(0,255),random.randint(0,255),random.randint(0,255)] 
+cv2_imshow(image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 ```
   </td>
   <td width="50%">
@@ -131,8 +131,31 @@ Split and merge HSV Image
     <td width=50%>
 
 ### v)Cut and paste portion of image
-<br>
-<br>
+
+ ```Python
+    !pip install google-colab
+from google.colab.patches import cv2_imshow
+import cv2
+import numpy as np
+image=cv2.imread('green.jpg',1)
+image = cv2.resize(image, (400, 400))
+print(image.shape)
+tag =image[130:200,110:190]
+image[110:180,120:200] = tag
+cv2_imshow(image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+  </td>
+  <td>
+    
+### OUTPUT:
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/4ab42df1-7869-4057-813e-2f36573a40ef)
+
+
+  </td>
+  </tr>
+</table>
 
 ### vi) BGR and RGB to HSV and GRAY
 <br>
