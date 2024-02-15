@@ -103,8 +103,32 @@ Split and merge HSV Image
     <td>
 
 ### iv)Access rows and columns
-<br>
-<br>
+```Python
+    !pip install google-colab
+  from google.colab.patches import cv2_imshow
+  import cv2
+  import numpy as np
+  image=cv2.imread('green.jpg',1)
+  image = cv2.resize(image, (400, 400))
+  print(image.shape)
+  tag =image[130:200,110:190]
+  image[110:180,120:200] = tag
+  cv2_imshow(image)
+  cv2.waitKey(0)
+  cv2.destroyAllWindows()
+```
+  </td>
+  <td width="50%">
+
+### OUTPUT:
+
+ ![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/57b80586-c2c5-4d30-bddc-32f9afb7b001)
+
+
+  </td>
+  </tr>
+  <tr>
+    <td width=50%>
 
 ### v)Cut and paste portion of image
 <br>
