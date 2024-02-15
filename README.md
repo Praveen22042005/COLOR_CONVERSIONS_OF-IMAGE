@@ -36,8 +36,8 @@ Split and Merge RGB Image
 Split and merge HSV Image
 
 ##### Program:
-### Developed By:
-### Register Number: 
+### Developed By: Praveen BV
+### Register Number: 212222100036
 
 
 ## Output:
@@ -45,6 +45,17 @@ Split and merge HSV Image
 ### i) Read and display the image
 
 <br>
+```
+!pip install google-colab
+from google.colab.patches import cv2_imshow
+
+import cv2
+color_image = cv2.imread('green.jpg',1)
+cv2_imshow(color_image)
+cv2.waitKey(0)
+```
+![green](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/badd69da-34f3-43b1-9edf-174548a24c3e)
+
 <br>
 
 ### ii)Write the image
