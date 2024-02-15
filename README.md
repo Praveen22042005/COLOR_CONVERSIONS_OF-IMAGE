@@ -78,8 +78,7 @@ Split and merge HSV Image
 
 ### OUTPUT:
 
-
-
+![out](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/429b314c-793e-4689-9a22-7b5b86f5cec6)
 
   </td>
   </tr>
