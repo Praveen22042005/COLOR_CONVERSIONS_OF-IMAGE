@@ -176,7 +176,12 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/e95167d1-0da9-47e6-8148-502eade83626)
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/b932447d-5145-40a4-a9b1-867fc1e13b91)
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/472665a3-0ac6-4ca9-9063-d75f68857bc7)
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/c55d6fe3-722f-444d-8c56-4fbc5cda4917)
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/4fcf7e77-6753-4bda-9b59-678940bc4b5d)
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/90be3e77-b45f-4138-b9c2-a27e45a211f9)
+
 
 
 ### vii) HSV to RGB and BGR
