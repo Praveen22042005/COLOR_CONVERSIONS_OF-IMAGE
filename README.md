@@ -43,8 +43,6 @@ Split and merge HSV Image
 ## Output:
 
 ### i) Read and display the image
-
-<br>
 ```
 !pip install google-colab
 from google.colab.patches import cv2_imshow
@@ -55,7 +53,7 @@ cv2_imshow(color_image)
 cv2.waitKey(0)
 ```
 ![green](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/badd69da-34f3-43b1-9edf-174548a24c3e)
-
+<br>
 <br>
 
 ### ii)Write the image
