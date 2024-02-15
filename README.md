@@ -95,7 +95,7 @@ Split and merge HSV Image
   <td>
 
 ### OUTPUT:
-![Uploading out 1.png…]()
+![out 1](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/3502d9cf-0e59-4839-a360-fbfd913bb458)
 
   </td>
   </tr>
