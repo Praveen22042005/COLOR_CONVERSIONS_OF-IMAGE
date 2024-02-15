@@ -42,19 +42,32 @@ Split and merge HSV Image
 
 ## Output:
 
-### i) Read and display the image
 ```
-!pip install google-colab
-from google.colab.patches import cv2_imshow
+<table>
+  <tr>
+    <td width=50%>
 
-import cv2
-color_image = cv2.imread('green.jpg',1)
-cv2_imshow(color_image)
-cv2.waitKey(0)
-```
-![green](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/badd69da-34f3-43b1-9edf-174548a24c3e)
-<br>
-<br>
+### i) Read and display the image
+```Python
+    import cv2
+    image=cv2.imread('green.jpg',1)
+    image=cv2.resize(image,(400,300))
+    cv2.imshow('Praveen BV',image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+``` 
+  </td>
+  <td>
+### OUTPUT:
+
+ ![green](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/ab94fba7-ee06-4b17-a9c9-608037050f38)
+
+
+  </td>
+  </tr>
+
+   <tr>
+    <td width=50%>
 
 ### ii)Write the image
 
