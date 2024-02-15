@@ -192,14 +192,14 @@ cv2.destroyAllWindows()
 ### vii) HSV to RGB and BGR
 ```Python
 import cv2
-img = cv2.imread('space1.jpg')
+img = cv2.imread('green.jpg')
 img = cv2.resize(img,(300,200))
 img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
-cv2.imshow('Original HSV Image',img)
+cv2_imshow(img)
 RGB = cv2.cvtColor(img,cv2.COLOR_HSV2RGB)
-cv2.imshow('2HSV2BGR',RGB)
+cv2_imshow(RGB)
 BGR = cv2.cvtColor(img,cv2.COLOR_HSV2BGR)
-cv2.imshow('HSV2RGB',BGR)
+cv2_imshow(BGR)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
@@ -209,20 +209,85 @@ cv2.destroyAllWindows()
 
 ![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/c7bdf89c-bbdf-405b-b67f-c486e80b7efc)
 
-![Uploading image.png…]()
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/3ed6fb47-bea0-45e6-8656-341e8c0555ff)
+
 
 
 ### viii) RGB and BGR to YCrCb
-<br>
-<br>
+```Python
+import cv2
+img = cv2.imread('green.jpg')
+img = cv2.resize(img,(300,200))
+cv2_imshow(img)
+YCrCb1 = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb)
+cv2_imshow(YCrCb1)
+YCrCb2 = cv2.cvtColor(img, cv2.COLOR_RGB2YCrCb)
+cv2_imshow(YCrCb2)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+
+### OUTPUT:
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/8d56cc2d-b28f-4e74-b33f-947747c1f57e)
+
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/88225a0f-e1ff-43fd-8a97-0ca131465e6a)
+
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/83331b9b-6437-47be-8965-766e04f700f5)
+
 
 ### ix) Split and merge RGB Image
-<br>
-<br>
+```Python
+import cv2
+img = cv2.imread('green.jpg',1)
+img = cv2.resize(img,(300,200))
+R = img[:,:,2]
+G = img[:,:,1]
+B = img[:,:,0]
+cv2_imshow(R)
+cv2_imshow(G)
+cv2_imshow(B)
+merged = cv2.merge((B,G,R))
+cv2_imshow(merged)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+
+### OUTPUT:
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/dedba354-6127-44ee-b634-621d228021fc)
+
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/e26c68cd-d4a9-4386-b2f2-ccf1f626260e)
+
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/446dedaa-1254-4e70-9b99-debe6d02e760)
+
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/acee5f86-7aba-43d5-a926-f7b9925dacda)
+
 
 ### x) Split and merge HSV Image
-<br>
-<br>
+```Python
+import cv2
+img = cv2.imread("green.jpg",1)
+img = cv2.resize(img,(300,200))
+img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
+H,S,V=cv2.split(img)
+cv2_imshow(H)
+cv2_imshow(S)
+cv2_imshow(V)
+merged = cv2.merge((H,S,V))
+cv2_imshow(merged)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+
+### OUTPUT:
+
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/f5fa65d8-eaa8-405b-94ae-561a02896e30)
+
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/04e45194-b2bc-4392-a9a4-44b1e40a520a)
+
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/f79fdde4-7fdb-46a4-b999-d319770935eb)
+
+![image](https://github.com/Praveen22042005/COLOR_CONVERSIONS_OF-IMAGE/assets/112475766/50ed647c-f112-42b4-8670-a4266a3ab240)
+
 
 
 
